@@ -9,7 +9,8 @@ import (
 
 func main() {
 	goPrompt()
-	sPrompt()
+	sPromptInput()
+	// sPromptSelect()
 }
 
 func goPrompt() {
@@ -20,7 +21,21 @@ func goPrompt() {
 
 }
 
-func sPrompt() {
+func sPromptInput() {
+	var response string
+	err := survey.AskOne(&survey.Input{
+		Message: "Favourite color",
+		Default: "red",
+	}, &response, nil)
+
+	if err != nil {
+		fmt.Printf("Error: %s\n", err)
+		return
+	}
+	fmt.Printf("Response: %s\n", response)
+}
+
+func sPromptSelect() {
 	var response string
 	choices := []string{"red", "blue"}
 	err := survey.AskOne(&survey.Select{

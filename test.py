@@ -7,7 +7,7 @@ def main():
     child.logfile = Logger(cmd)
     child.expect("Enter text:")
     child.sendline("Coool kids")
-    child.expect("Pick one") # This appears to be the culprit line
+    child.expect("Favourite color") # This appears to be the culprit line
     child.sendline("")
     child.expect("Response: red")
     print("Done")

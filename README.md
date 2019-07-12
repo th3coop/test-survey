@@ -10,6 +10,8 @@
 `python test.py`
 - checkout the log file that should be created, **log.log**
 
+## Notes
+I used to example functions from the survey library.  You can comment out one at a time to see their results.
 
 ## Results
 When you run the test file you will get and exception reported
