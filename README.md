@@ -21,7 +21,7 @@ survey library to crash.
 If you comment out everything after *line 10* in `main()`, lines 11 to 13, you will get the same output in **log.log**.
 
 ### Sample log output
-For your reference, this is what I get in **log.log** when I run `python test.py`:
+For your reference, this is what I get in **log.log** when I run `python test.py` with `sPromptSelect()` in **main.go**:
 ```
 -- Executing 'go run main.go' --
 
@@ -32,4 +32,13 @@ Coool kids
 [1;36m> red[0m
 [1;99m  blue[0m
 Error: Incorrect function.
+```
+This is what I get in **log.log** when I run `python test.py` with `sPromptInput()` in **main.go**:
+```
+-- Executing 'go run main.go' --
+
+Enter text: Coool kids
+Coool kids
+
+[1;92m? [0m[1;99mFavourite color [0m[37m(red) [0mError: Incorrect function.
 ```
