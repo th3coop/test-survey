@@ -1,3 +1,5 @@
+This repo was created to demostrate a bug in: https://github.com/AlecAivazis/survey
+Ticket: https://github.com/AlecAivazis/survey/issues/202
 ## Instructions
 - be using *Python3* and have *virtualenv* installed
 - create a virtualenv 
